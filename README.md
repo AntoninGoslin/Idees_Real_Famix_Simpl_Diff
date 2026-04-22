@@ -84,6 +84,6 @@ Il y aura donc deux cas concrets( dans la cas ou le modèle 2 est la target):
 
 Voir la gestion des parents dans ces cas, mais également la gestion des miroirs(ajout dans modele 1 = suppression dans le modèle 2).
 
-## 5) Mettre a jour le retour pour renvoyer la liste de différence en plus du boolean
+## 5) Mettre a jour le retour pour renvoyer la liste de différence en plus du boolean (TOOD)
 
 Une fois les étapes précedentes réalisées, il faudar finalement mettre a jour les méthodes comme compareModel:to: pour renvoyer la liste de différence en plus du booleen qui indique si les modèles sont équivalents ou non.
