@@ -44,7 +44,7 @@ Dependant de l'implémentation choisie, les différences changeront selon la tar
 
 # Liste des taches à faire
 
-# 1) Mettre en place la structure de données pour representer une différence.
+# 1) Mettre en place la structure de données pour representer une différence. (TODO)
 
 Avant de pouvoir etablir une liste de différence, nous avons besoin d'une classe qui va représenter cette différence.
 
@@ -55,3 +55,8 @@ Dans cette classe on aura par exemple comme variable d'instance:
 - Le type de différence(ajout/suppression/modification)
 - La target (a voir)
 - Ce qui a changé(ce qu'on voulait => ce qu'on a eu)
+
+# 2) Ajouter la liste des différences dans Famix-Simpl-Diff (TODO)
+
+Il nous faut quelque part ou ranger la liste des différences que l'on trouve au fur et a mesure.
+Il faudrait ajouter une variable d'instance différence pour pouvoir stocker ces différences.
