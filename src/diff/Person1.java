@@ -4,10 +4,12 @@ package diff;
 public class Person1 {
     private String name;
     private int age;
+    private int money;
 
-    public Person1(String name, int age){
+    public Person1(String name, int age, int money){
         this.name = name;
         this.age = age;
+        this.money = money;
     }
 
     public String getName(){

@@ -26,13 +26,11 @@ public class Person2 {
         this.age = newAge;
     }
     
-    public void getOlder(){
-        this.age = this.age + 1;
-    }
+    // Here we deleted method
 
     //HERE we have a new method
     public boolean isAdult(){
         return this.getAge() >= 18;
     }
-    
+
 }
