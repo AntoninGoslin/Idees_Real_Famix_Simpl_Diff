@@ -18,6 +18,12 @@ recap:
 - Si différence -> recuperer + stocker dans une liste
 - A la fin du parcours des modèles, on renvoie la liste des différences
 
+### Différencier la localisation de la différence 
+
+Pour se baser sur ce que fait git diff, il prend un code 1 et un code 2, et il renvoie les lignes qui ont changés. Donc les ajouts et les retraits.
+
+Pour faire ça, il doit y avoir deux listes de différences, un liste qui vient de 1 et un liste qui vient de deux. Il faudra voir comment localiser la différence.
+
 ## Liste des taches à faire
 
 TODO
