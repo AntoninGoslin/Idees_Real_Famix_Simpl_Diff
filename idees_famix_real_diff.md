@@ -78,4 +78,4 @@ Il y aura donc deux cas concrets( dans la cas ou le modèle 2 est la target):
 - Suppression -> Si une entité est présente dans le modèle 1 mais pas dans le 2, elle a été suprrimée du modèle 2.
 - Ajout -> Si une entité est présente dans le modèle 2 mais pas dans le modèle 1, elle a été ajoutée dans le modèle 1.
 
-Voir la gestion des parents dans ces cas.
+Voir la gestion des parents dans ces cas, mais également la gestion des miroirs(ajout dans modele 1 = suppression dans le modèle 2).
