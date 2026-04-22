@@ -42,6 +42,16 @@ Pour continuer directement le point précédent, pour etablir une liste de diff�
 ### La gestion des evenement mirror entre ajout/suppression
 Dependant de l'implémentation choisie, les différences changeront selon la target que l'on a définie. Par exemple si dans le modèle 1, on a l'ajout d'une ligne, alors dans le modèle 2 cela correspond a une suppression, et inversement.
 
-## Liste des taches à faire
+# Liste des taches à faire
 
-TODO
+# 1) Mettre en place la structure de données pour representer une différence.
+
+Avant de pouvoir etablir une liste de différence, nous avons besoin d'une classe qui va représenter cette différence.
+
+On va donc devoir créer une classe Famix-Difference ou autre nom afin de pouvoir créer des objets qui vont representer des différences.
+
+Dans cette classe on aura par exemple comme variable d'instance:
+- l'entité 
+- Le type de différence(ajout/suppression/modification)
+- La target (a voir)
+- Ce qui a changé(ce qu'on voulait => ce qu'on a eu)
