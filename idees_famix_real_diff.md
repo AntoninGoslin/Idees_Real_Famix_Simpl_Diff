@@ -24,6 +24,22 @@ Pour se baser sur ce que fait git diff, il prend un code 1 et un code 2, et il r
 
 Pour faire ça, il doit y avoir deux listes de différences, un liste qui vient de 1 et un liste qui vient de deux. Il faudra voir comment localiser la différence.
 
+### Les modes d'identification des différences:
+
+Pour le moment j'ai reperé plusieur façon de mettre en lumière des différences:
+La target va designer le modèle sur lequel on se base pour interpreter les différences(ajouts/suppression/différences).
+- Avec notion de temps: Ce que va faire git diff, c'est mettre la target sur le code le plus recent que l'utilisateur est entrain d'écrire. Donc en se basant sur cela, on regarde les modifs qui ont été faites comparé au code plus vieux et on base l'analyse sur cela. 
+
+- Choisir manuellement la target -> on va choisir nous meme le modele sur lequel on va se baser pour interpreter la différence.
+- Fonctionnement sans target -> On peut egalement faire un mode sans target. Dans ce cas, les deux modèles comparés aurait chacun leurs propre liste de différence, et l'interpretation dependrait de l'utilisateur
+
+### Utiliser une ou plusieur liste de différences
+Pour continuer directement le point précédent, pour etablir une liste de différence, il faut alors savoir si on va créer une liste de différence par modèle, ou alors une liste de différence générale, qui dépendrais du choix de la target(manuelle, temps, autre).
+
+### La gestion des evenement mirror entre ajout/suppression
+Dependant de l'implémentation choisie, les différences changeront selon la target que l'on a définie. Par exemple si dans le modèle 1, on a l'ajout d'une ligne, alors dans le modèle 2 cela correspond a une suppression, et inversement.
+
+Pour illustrer cela, on peut 
 ## Liste des taches à faire
 
 TODO
