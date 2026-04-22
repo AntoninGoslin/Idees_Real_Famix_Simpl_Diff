@@ -8,6 +8,9 @@ On ne peut pas vraiment voir les différences qui existe entre les modèles.
 
 ## Liste des idées
 
+Pour illustrer les idées exprimés ci-dessous, on peut se référer au schema suivant
+![Schema  des idées de comparaison](image/schema_test_diff.jpg).
+
 ### Remplacer les fails par du vrai comportement
 Pour le moment Famix-Simpl-Diff ne parcours pas réelement tout le modèle en cas d'echec. Il va parcourir le modèle et dès qu'il trouve une différence, il appelle fail afin d'arreter l'execution de la recherche de différence.
 
@@ -39,7 +42,6 @@ Pour continuer directement le point précédent, pour etablir une liste de diff�
 ### La gestion des evenement mirror entre ajout/suppression
 Dependant de l'implémentation choisie, les différences changeront selon la target que l'on a définie. Par exemple si dans le modèle 1, on a l'ajout d'une ligne, alors dans le modèle 2 cela correspond a une suppression, et inversement.
 
-Pour illustrer cela, on peut 
 ## Liste des taches à faire
 
 TODO
