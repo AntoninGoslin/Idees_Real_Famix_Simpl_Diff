@@ -60,3 +60,11 @@ Dans cette classe on aura par exemple comme variable d'instance:
 
 Il nous faut quelque part ou ranger la liste des différences que l'on trouve au fur et a mesure.
 Il faudrait ajouter une variable d'instance différence pour pouvoir stocker ces différences.
+
+# 3) Remplacer les fails par les ajouts de différences, on ne doit plus s'arreter a la moindre différence (TODO)
+
+Comme on l'a vu précédement, pour le moment FamixSimplDiff s'arrete dès qu'il trouve une différence entre deux modèles. Il faudrait maintenant remplacer tout les cas ou on a un fail par une logique d'ajout de nos différences dans la liste creée précédement.
+
+Il faudrait ajouter une methode recordDifference pour povoir enregistrer une différence dans la liste de différence (sorte de add pour les liste mais avec une différence). 
+
+Une fois record difference créee, on fait des appels a cette methode au lieu de renvoyer des fails.
