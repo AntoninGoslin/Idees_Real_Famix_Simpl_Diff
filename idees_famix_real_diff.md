@@ -44,7 +44,7 @@ Dependant de l'implémentation choisie, les différences changeront selon la tar
 
 # Liste des taches à faire
 
-# 1) Mettre en place la structure de données pour representer une différence. (TODO)
+## 1) Mettre en place la structure de données pour representer une différence. (TODO)
 
 Avant de pouvoir etablir une liste de différence, nous avons besoin d'une classe qui va représenter cette différence.
 
@@ -56,15 +56,26 @@ Dans cette classe on aura par exemple comme variable d'instance:
 - La target (a voir)
 - Ce qui a changé(ce qu'on voulait => ce qu'on a eu)
 
-# 2) Ajouter la liste des différences dans Famix-Simpl-Diff (TODO)
+## 2) Ajouter la liste des différences dans Famix-Simpl-Diff (TODO)
 
 Il nous faut quelque part ou ranger la liste des différences que l'on trouve au fur et a mesure.
 Il faudrait ajouter une variable d'instance différence pour pouvoir stocker ces différences.
 
-# 3) Remplacer les fails par les ajouts de différences, on ne doit plus s'arreter a la moindre différence (TODO)
+## 3) Remplacer les fails par les ajouts de différences, on ne doit plus s'arreter a la moindre différence (TODO)
 
 Comme on l'a vu précédement, pour le moment FamixSimplDiff s'arrete dès qu'il trouve une différence entre deux modèles. Il faudrait maintenant remplacer tout les cas ou on a un fail par une logique d'ajout de nos différences dans la liste creée précédement.
 
 Il faudrait ajouter une methode recordDifference pour povoir enregistrer une différence dans la liste de différence (sorte de add pour les liste mais avec une différence). 
 
 Une fois record difference créee, on fait des appels a cette methode au lieu de renvoyer des fails.
+
+## 4) Gerer la gestion de suppression et d'ajout (TODO)
+Il faudra voir comment ajouter la gestion des ajout et suppression d'entité.
+Ce cas va se produire sur des listes d'entités de taille différentes(par exemple avec l'ajout d'une méthode dans une classe d'un modèle).
+
+Il y aura donc deux cas concrets( dans la cas ou le modèle 2 est la target):
+
+- Suppression -> Si une entité est présente dans le modèle 1 mais pas dans le 2, elle a été suprrimée du modèle 2.
+- Ajout -> Si une entité est présente dans le modèle 2 mais pas dans le modèle 1, elle a été ajoutée dans le modèle 1.
+
+Voir la gestion des parents dans ces cas.
