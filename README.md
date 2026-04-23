@@ -80,7 +80,7 @@ difference
 ```
 
 
-## 2) Ajouter la liste des différences dans Famix-Simpl-Diff (TODO)
+## 2) Ajouter la liste des différences dans Famix-Simpl-Diff (OK)
 
 Il nous faut quelque part ou ranger la liste des différences que l'on trouve au fur et a mesure.
 Il faudrait ajouter une variable d'instance différence pour pouvoir stocker ces différences.
