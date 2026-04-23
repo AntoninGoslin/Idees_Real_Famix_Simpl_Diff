@@ -49,7 +49,7 @@ Dependant de l'implémentation choisie, les différences changeront selon la tar
 
 # Liste des taches à faire
 
-## 1) Mettre en place la structure de données pour representer une différence. (TODO)
+## 1) Mettre en place la structure de données pour representer une différence. (OK)
 
 Avant de pouvoir etablir une liste de différence, nous avons besoin d'une classe qui va représenter cette différence.
 
@@ -60,6 +60,25 @@ Dans cette classe on aura par exemple comme variable d'instance:
 - Le type de différence(ajout/suppression/modification)
 - La target (a voir)
 - Ce qui a changé(ce qu'on voulait => ce qu'on a eu)
+
+#### OK:
+
+On peut tester la représentation des différences ainsi:
+```Smaltalk
+| difference expectedValue actualValue |
+
+expectedValue := 'private int money;'.
+actualValue := 'private int age;'.
+
+difference := FamixDiff 
+	entity: 'testEntity' 
+	changeType: #entityModification
+	expectedValue: expectedValue 
+	actualValue: actualValue.
+
+difference
+```
+
 
 ## 2) Ajouter la liste des différences dans Famix-Simpl-Diff (TODO)
 
