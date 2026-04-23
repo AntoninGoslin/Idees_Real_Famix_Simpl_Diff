@@ -67,8 +67,8 @@ On peut tester la représentation des différences ainsi:
 ```Smaltalk
 | difference expectedValue actualValue |
 
-expectedValue := 'private int money;'.
-actualValue := 'private int age;'.
+expectedValue := 'ClassA'.
+actualValue := 'ClassB'.
 
 difference := FamixDiff 
 	entity: 'testEntity' 
