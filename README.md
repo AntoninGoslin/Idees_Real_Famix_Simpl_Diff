@@ -85,7 +85,7 @@ difference
 Il nous faut quelque part ou ranger la liste des différences que l'on trouve au fur et a mesure.
 Il faudrait ajouter une variable d'instance différence pour pouvoir stocker ces différences.
 
-## 3) Remplacer les fails par les ajouts de différences, on ne doit plus s'arreter a la moindre différence (WIP)
+## 3) Remplacer les fails par les ajouts de différences, on ne doit plus s'arreter a la moindre différence (OK)
 
 Comme on l'a vu précédement, pour le moment FamixSimplDiff s'arrete dès qu'il trouve une différence entre deux modèles. Il faudrait maintenant remplacer tout les cas ou on a un fail par une logique d'ajout de nos différences dans la liste creée précédement.
 
@@ -93,7 +93,7 @@ Il faudrait ajouter une methode recordDifference pour povoir enregistrer une dif
 
 Une fois record difference créee, on fait des appels a cette methode au lieu de renvoyer des fails.
 
-## 4) Gerer la gestion de suppression et d'ajout (TODO)
+## 4) Gerer la gestion de suppression et d'ajout (WIP)
 Il faudra voir comment ajouter la gestion des ajout et suppression d'entité.
 Ce cas va se produire sur des listes d'entités de taille différentes(par exemple avec l'ajout d'une méthode dans une classe d'un modèle).
 
@@ -103,6 +103,8 @@ Il y aura donc deux cas concrets( dans la cas ou le modèle 2 est la target):
 - Ajout -> Si une entité est présente dans le modèle 2 mais pas dans le modèle 1, elle a été ajoutée dans le modèle 1.
 
 Voir la gestion des parents dans ces cas, mais également la gestion des miroirs(ajout dans modele 1 = suppression dans le modèle 2).
+
+TODO : Il y a encore quelque bug dans la façon de recuperer les entités qui ont changés, il faudra voir par la suite comment regler ce problème.  
 
 ## 5) Mettre a jour le retour pour renvoyer la liste de différence en plus du boolean (TODO)
 
