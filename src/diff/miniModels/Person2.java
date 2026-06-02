@@ -1,5 +1,4 @@
-package diff;
-
+package miniModels;
 /**simpl class to test differences */
 public class Person2 {
     private String name;
